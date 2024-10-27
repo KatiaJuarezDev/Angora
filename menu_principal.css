@@ -154,3 +154,122 @@ nav{
         width: 1519.5px;
     }
 }
+
+/*aquí empieza el grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Cambia 250px según tu preferencia */
+    gap: 50px;
+    padding: 20px;
+    max-width: 1250px; /* Aumenta el ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Centrar texto dentro del grid-item */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item:hover img {
+    transform: scale(1.05); 
+}
+
+.grid-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #21325E;
+}
+
+.grid-item p {
+    font-size: 14px;
+    color: #2555ffe1;
+}
+
+.headerTitulo {
+    font-style: serif; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 36px; 
+    color: #ffffff; 
+    background-color: #4203035b;
+}
+
+/*ANUNCIO*/
+.anuncio {
+    width: 100%; /* Para que la imagen ocupe todo el ancho */
+    display: block;
+    margin: 20px 0; /* Margen opcional para separarla del contenido */
+}
+
+/*FOOTER*/
+.dominio{
+    color: #fff;
+}
+.Redes{
+    color: #ffffff;
+}
+
+.footer__icono {
+    width: 50px;  
+    height: 50px; 
+    margin-right: 10px;
+}
+
+/*BARRA DE BUSQUEDA*/
+/* Estilos de la barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 5px 10px;
+    width: 250px;
+    margin-left: auto;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    flex: 1;
+    border-radius: 30px;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-input::placeholder {
+    color: #aaa;
+}
